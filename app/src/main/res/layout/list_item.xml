@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:wave="http://schemas.android.com/tools"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="#48A4B5"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/itemDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:text="October 12th, 2023"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/waterDrankTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You drank: "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="4dp"
+            android:layout_below="@id/itemDateTV"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/waterDrankTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.0L"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/waterDrankTV2"
+            android:layout_below="@id/itemDateTV"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/itemDescTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/waterDrankTV"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="175dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentStart="true"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:text="You did not drink enough water!"
+            android:textSize="12sp" />
+        <com.yangp.ypwaveview.YPWaveView
+            android:id="@+id/waveView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            app:animatorEnable="true"
+            app:textHidden="false"
+            app:shapeType="circle"
+            app:frontColor="#0f5e9c"
+            app:behideColor="#2389da"
+            app:borderColor="@color/white"
+            app:borderWidthSize="2dp"
+            app:textColor="@color/white"
+            app:max="100"
+            app:progress="40"
+            app:strong="100"
+            app:shapePadding="2dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

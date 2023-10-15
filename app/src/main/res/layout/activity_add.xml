@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    xmlns:strokeAttrs="http://schemas.android.com/apk/res-auto"
+    android:background="#329BAD">
+
+
+    <com.example.watertrak.StrokedTextView
+        android:id="@+id/watertrakLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="WaterTrak"
+        android:textColor="@color/white"
+        android:textSize="58sp"
+        android:fontFamily="@font/water"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        strokeAttrs:textStrokeColor="#48A4B5"
+        strokeAttrs:textStrokeWidth=".6"
+        android:layout_marginTop="10dp"
+        android:transitionName="logo"/>
+
+    <EditText
+        android:id="@+id/entryDateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="150dp"
+        android:inputType="date"
+        android:hint="Choose date for entry"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:background="#48A4B5"
+        android:gravity="center"
+        android:clickable="false"
+        android:longClickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watertrakLogo" />
+
+    <EditText
+        android:id="@+id/waterDrankET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:hint="Enter Amount Drank (L)"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryDateET" />
+
+    <Button
+        android:id="@+id/addEntryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Entry!"
+        android:transitionName="button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterDrankET" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
