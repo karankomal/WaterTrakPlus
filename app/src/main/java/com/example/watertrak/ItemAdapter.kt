@@ -34,6 +34,7 @@ class ItemAdapter(private val context: Context, private val items: List<DisplayI
         if (progress > 100)
             progress = 100
         holder.waveView.progress = progress
+        holder.waveView.startAnimation()
     }
 
     override fun getItemCount(): Int {

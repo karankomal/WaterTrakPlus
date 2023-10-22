@@ -4,6 +4,8 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">#48A4B5</item>
+        <item name="colorSecondaryContainer">#0f5e9c</item>
+
     </style>
 
     <style name="Theme.WaterTrak" parent="Base.Theme.WaterTrak" />

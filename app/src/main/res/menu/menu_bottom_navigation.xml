@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_entries"
+        android:icon="@drawable/baseline_format_list_bulleted_24"
+        android:title="Entries" />
+
+    <item
+        android:id="@+id/nav_graph"
+        android:icon="@drawable/baseline_auto_graph_24"
+        android:title="Graph" />
+</menu>
